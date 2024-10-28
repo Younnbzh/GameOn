@@ -104,8 +104,15 @@ removeErrors();
     errorform=1;
     errorClass('aftereua','Merci d\' accepter les conditions d\'utilisation');
   }
+  // If everything is ok show success message
   if(errorform!=1) {
-    alert('Tout est ok');
+    document.getElementById("formreserve").remove();
+    let h1 = document.createElement('h1');
+    h1.textContent = 'Level up';
+    let p = document.createElement('p');
+    p.textContent = 'Félicitations, vous avez été correctement inscrit à notre prochain évènement !';
+    let div = document.querySelector('#formreservecont');
+    div.append(h1,p);
   } 
 }
 
