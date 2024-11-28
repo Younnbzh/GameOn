@@ -76,7 +76,6 @@ submitForm.addEventListener("click", checkForm);
 
 // Check form
 function checkForm() {
-  // on supprime les erreurs
   removeErrors();
   // Check first name
   if (!lengthValidation('first')) {
